@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Store - Registration and Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Validate username
+            if (username == "") {
+                alert("Please enter your username.");
+                return false;
+            }
+
+            // Validate password
+            if (password == "") {
+                alert("Please enter your password.");
+                return false;
+            }
+
+            // Form validation passed, submit the form
+            alert("Login successful!");
+            return true;
+        }
+    </script>
+    <style>
+        html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+     background-color: rgb(245, 187, 229);
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Registration and Login</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="catalog.html">Book Catalog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="login">
+                <center><h2>Login</h2>
+                    <p>Please enter your credentials to login.</p></center>
+                     <form onsubmit="return validateForm()">
+                    
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <button type="submit" class="btn">Login</button>
+                    <p class="message"> Not registered? <a href="Registration.html">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Book Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Store - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+     background-color: rgb(245, 187, 229);
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(245, 187, 229);
+  color: rgb(175, 74, 74);
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(245, 187, 229);
+  margin: 8px;
+  width: 350px;
+  height: 400px;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Book Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="catalog.html">Book Catalog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <h2 style="color:#851515" >Welcome to our Online Book Store!</h2>
+            <p style="color:#851515" >Explore our wide selection of books and enjoy a seamless shopping experience.</p>
+        </div>
+        <h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="p1.jpeg" alt="BOOKZONE" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Dishita Jain</h2>
+        <p class="title">CEO & Founder</p>
+        <p>“Be yourself; everyone else is already taken.”</p>
+        <p>dishitajain120@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <center><img src="p2.jpeg" alt="BOOKZONE" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Hitesh Lalwani</h2>
+        <p class="title">Art Director</p>
+        <p>“Two things are infinite: the universe and human stupidity.</p>
+        <p>HiteshLalwani369@gmail.com.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <center><img src="p1.jpeg" alt="BOOKZONE" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Khushi Samdani</h2>
+        <p class="title">Designer</p>
+        <p>“A room without books is like a body without a soul.”</p>
+        <p>khushisamdanu@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer>
+        <div class="about-section">
+            <h1>About Us </h1>
+            <p>Book Zone provides easy interface to its customer for purchasing books online.</p>
+            <p>For any query leave a comment in the Home page comment section. You can also send us email and call us 
+                on Week days. 
+                <br>Thankyou for your patience and hope you had a great shopping here.
+            </p>
+          </div>
+        <p>&copy; 2023 Online Book Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Store - Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function updateQuantity(bookId) {
+            // Get the quantity input value
+            var quantityInput = document.getElementById("quantity_" + bookId);
+            var quantity = parseInt(quantityInput.value);
+
+            // Validate the quantity
+            if (isNaN(quantity) || quantity <= 0) {
+                alert("Please enter a valid quantity.");
+                return false;
+            }
+
+            // Update the quantity in the cart
+            // Your code to update the quantity in the shopping cart goes here
+
+            alert("Quantity updated successfully!");
+            return true;
+        }
+
+        function removeBook(bookId) {
+            // Confirm with the user before removing the book
+            var confirmation = confirm("Are you sure you want to remove this book from the cart?");
+            if (confirmation) {
+                // Remove the book from the cart
+                // Your code to remove the book from the shopping cart goes here
+
+                alert("Book removed from the cart successfully!");
+                return true;
+            }
+            return false;
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(245, 187, 229);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="catalog.html">Book Catalog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <div class="item">
+                    <img src="th2.jpeg" alt="Book 1">
+                    <h3>Book 1</h3>
+                    <p>A book full of twist and thriller the best seller book with world wide popularity.</p>
+                    <input type="number" id="quantity_1" placeholder="Enter quantity" min="1">
+                    <button onclick="return updateQuantity(1)" class="btn">Update Quantity</button>
+                    <button onclick="return removeBook(1)" class="btn">Remove Book</button>
+                </div>
+                <div class="item">
+                    <img src="comedy1.jpeg" alt="Book 2">
+                    <h3>Book 2</h3>
+                    <p>A roller coaster life of an Indian man who is lucky to go easy person...A slice of Life book that will never let you get bored.</p>
+                    <input type="number" id="quantity_2" placeholder="Enter quantity" min="1">
+                    <button onclick="return updateQuantity(2)" class="btn">Update Quantity</button>
+                    <button onclick="return removeBook(2)" class="btn">Remove Book</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Book Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
